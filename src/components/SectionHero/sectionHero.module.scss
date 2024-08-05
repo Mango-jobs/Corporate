@@ -1,0 +1,21 @@
+.container{
+    position: relative;
+}
+.hero{
+    height: 85vh;
+    object-fit: contain;
+    filter: brightness(0.5)
+}
+.text{
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    left: 5%;
+    font-size: 2.5rem;
+    top: 50%;
+    padding: 10px;
+    width: 450px;
+    transform: translate(-10%, -50%);
+    font-family: sans-serif;
+    z-index: 1;
+}

@@ -1,0 +1,40 @@
+@import '../../styles/vars';
+
+.wrapper{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+    //margin: 0 16px;
+    background-color: $global-header;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo {
+    width: 30%;
+    font-size: 1.5rem;
+    font-family: $font-family;
+    cursor: pointer;
+    font-weight: 700;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+}
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    list-style: none;
+    &-item {
+        font-size: 1.25rem;
+        font-family: $font-family;
+        cursor: pointer;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+    }
+}

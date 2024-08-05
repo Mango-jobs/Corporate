@@ -1,0 +1,45 @@
+.box{
+    padding: 20px 0;
+}
+.card-container{
+    padding: 20px 0;
+}
+.card{
+    display: flex;
+    //height: 250px;
+}
+.card-rev{
+    display: flex;
+    flex-direction: row-reverse;
+    //height: 250px;
+}
+.title{
+    width: 50%;
+    /* text-align: center; */
+    font-size: 2.2rem;
+    font-weight: 500;
+   // background: #fbdcdc;
+   background-color: #cfbceb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desc{
+    width: 50%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+.img-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.img{
+    height: 400px;
+    width: 400px;
+}

@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $spacing;
+
+
+    &-md {
+        max-width: $container-md;
+    }
+
+
+    &-lg {
+        max-width: $container-lg;
+    }
+
+
+    &-xl {
+        max-width: $container-xl;
+        @include mq-mobile-narrow {
+            padding: 0 15px;
+        }
+    }
+
+
+    &-fs {
+        max-width: $container-fs;
+        padding: 0;
+    }
+}

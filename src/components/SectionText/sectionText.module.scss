@@ -1,0 +1,19 @@
+@import '../../styles/vars';
+
+.box{
+    padding: 40px 0 20px;
+}
+.title{
+    padding-bottom: 10px;
+    font-size: 2rem;
+    //color: blue;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: $global-color;
+}
+.desc{
+    padding: 10px;
+    p{
+        font-size: 1.25rem ;
+    }
+}

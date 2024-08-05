@@ -1,0 +1,31 @@
+@import '../../styles/vars';
+
+.form-container{
+    width: 80%;
+}
+.input-box{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    label{
+        padding: 5px 0;
+        margin: 5px 0;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    input{
+        height: 30px;
+        width: 350px;
+    }
+}
+.btn{
+    padding: 10px;
+    background: $global-color;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: white;
+}

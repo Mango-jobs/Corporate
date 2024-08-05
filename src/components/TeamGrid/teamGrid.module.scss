@@ -1,0 +1,41 @@
+.box{
+    padding: 20px 0;
+}
+.title{
+    padding-bottom: 10px;
+    font-size: 2rem;
+    //color: blue;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #af79ff;
+}
+.card-box{
+    padding: 10px;
+    display: flex;
+}
+.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img{
+    //height: 250px;
+}
+.card-img-box{
+    width: 250px;
+}
+.desc{
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+}
+.name{
+    p{
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+}

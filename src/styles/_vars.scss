@@ -1,0 +1,75 @@
+$global-color: var(--global-color, #7d3eda);
+$color-primary: var(--global-font-color, rgb(255, 255, 255));
+$color-dark: var(--global-font-color, rgb(0, 0, 0));
+$global-color-light: var(--global-color, #ebf1ed);
+$global-color-dark: var(--global-color, #d0ddd4);
+$global-header:var(--global-color, #7246b6);
+
+$font-family: "Montserrat", sans-serif;
+$font-family-semi-bold: "Montserrat semi-bold", sans-serif;
+$font-family-bold: "Montserrat bold", sans-serif;
+
+
+// spacing
+$spacing: 16px;
+$spacing-half: 8px;
+$spacing-double: 32px;
+$spacing-negative: -16px;
+$spacing-negative-half: -8px;
+$spacing-negative-double: -32px;
+
+
+// container
+$container-sm: 555px + $spacing-double;
+$container-md: 744px + $spacing-double;
+$container-lg: 906px + $spacing-double;
+$container-xl: 1102px + $spacing-double;
+$container-fs: 100%;
+
+
+$desktop: 1024px;
+$mobile: 1024px;
+$bp-mobile: 768px;
+$bp-narrow-small: 360px;
+$bp-slim: 300px;
+$bp-smallScreen: 1280px;
+$medium-screen: 480px;
+$desktop-lg: 1500px;
+$desktop-xl: 2000px;
+
+
+@mixin mq-mobile-narrow {
+    @media (max-width: ($bp-mobile)) {
+        @content;
+    }
+}
+@mixin mq-tab-narrow {
+    @media (max-width: ($mobile)) {
+        @content;
+    }
+}
+@mixin mq-desktop {
+    @media (min-width: $bp-mobile + 1) {
+        @content;
+    }
+}
+@mixin mq-tab {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+@mixin extra-narrow-mobile {
+    @media (max-width: ($medium-screen)) {
+        @content;
+    }
+}
+@mixin mq-desktop-lg {
+    @media (min-width: ($desktop-lg)) {
+        @content;
+    }
+}
+@mixin mq-desktop-xl {
+    @media (min-width: ($desktop-xl)) {
+        @content;
+    }
+}

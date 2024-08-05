@@ -1,0 +1,15 @@
+@import '../../styles/vars';
+
+.box{
+    height: 150px;
+    background: $global-header;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+.text{
+    display: flex;
+    font-size: 1.25rem;
+    flex-direction: column;
+}
