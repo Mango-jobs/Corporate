@@ -9,7 +9,7 @@ const SectionHero = ({data}) => {
   return (
     <div className={styles.container}>
         <div className={styles.text}>
-            <p>{title}</p>
+            <h1>{title}</h1>
         </div>
         <div >
             <GatsbyImage image={desktopImage.gatsbyImageData} alt = {title} className={styles.hero}/>

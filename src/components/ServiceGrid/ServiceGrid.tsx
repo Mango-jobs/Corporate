@@ -8,7 +8,7 @@ const ServiceGrid = ({data}) => {
     <div className='container' id='services'>
         <div className={styles.box}>
         <div >
-            <p className='title'>{title}</p>
+            <h3 className='title'>{title}</h3>
         </div>
         <div className={styles.cardContainer}>
             {cards.map((item, id) =>{

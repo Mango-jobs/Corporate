@@ -7,7 +7,7 @@ const SectionText = ({data}) => {
     <div className={`container`} id='about'>
         <div className={styles.box}>
           <div>
-              <p className='title'> {title}</p>
+              <h2 className='title'> {title}</h2>
           </div>
           <div className={styles.desc}>
               <RichText content={description} />
