@@ -12,7 +12,7 @@ interface HomePageProps {
   data: {
     contentfulHomePage: {
       seoTitle: string;
-      seoDescription: string;
+      seoDescription: {};
       slug: string;
       section: Array<{
         key: string;
@@ -36,7 +36,7 @@ const HomePage: React.FC<HomePageProps> = ({
     <div>
       <Seo 
         title={seoTitle}
-        description={seoDescription}
+        description={seoDescription.seoDescription}
       />
       <div>
         {

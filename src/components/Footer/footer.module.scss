@@ -6,10 +6,15 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    height: 200px;
 }
 .text{
     display: flex;
     font-size: 1.25rem;
     flex-direction: column;
+    color: white;
+    p{
+        margin: 7px 0;
+    }
 }
