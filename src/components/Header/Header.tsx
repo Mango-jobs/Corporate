@@ -17,7 +17,7 @@ const Header = () => {
   
   return (
     <div className={`container ${styles.wrapper}`}>
-      <div className={`${styles.wrapper}`}>
+      <div className={`${styles.box}`}>
         <div className={styles.logo}><Link to = '/'> Mango Jobs </Link></div>
         <ul className={styles.nav}>
           {header.map((item, id) =>{
