@@ -18,6 +18,7 @@ export const useSiteQuery = () => {
                 }
                 address
                 phone
+                emailId
             }
         }
     `)

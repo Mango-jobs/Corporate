@@ -12,7 +12,7 @@ module.exports = {
     title: `Power to Connect | HR | India`,
     description: `Mangojobs Private Limited has been dedicated to matching top talent with leading companies`,
     author: `@akarsh`,
-    siteUrl: `https://.mangojobs.com/`,
+    siteUrl: `https://mango-jobs.com/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -46,7 +46,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/fabicon.webp`, // This path is relative to the root of the site.
+        icon: `src/images/mango-jobs.png`, // This path is relative to the root of the site.
       },
     },
   ],

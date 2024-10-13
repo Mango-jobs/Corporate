@@ -4,7 +4,7 @@ import useSiteQuery from '../../hooks'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 const Footer = () => {
-  const {logo, address, phone} = useSiteQuery()
+  const {logo, address, phone, emailId} = useSiteQuery()
   return (
     <div className='conatainer'>
         <div className={styles.box}>
@@ -18,6 +18,7 @@ const Footer = () => {
             <div className={styles.text}>
               <p>Address: {address}</p>
               <p>Phone: +91-{phone}</p>
+              <p>Email Id: {emailId}</p>
             </div>
         </div>
     </div>
