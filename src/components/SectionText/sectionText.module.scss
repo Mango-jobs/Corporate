@@ -9,11 +9,18 @@
     //color: blue;
     font-weight: 500;
     font-family: sans-serif;
-    color: $global-color;
+    color: $color-primary;
 }
 .desc{
     padding: 10px;
     p{
         font-size: 1.25rem ;
+        color: $global-color-light;
+    }
+    @media (max-width: 768px){
+        p{
+            font-size: 1rem ;
+            color: $global-color-light;
+        }
     }
 }

@@ -1,3 +1,5 @@
+@import '../../styles//vars';
+
 .box{
     padding: 20px 0;
 }
@@ -6,11 +8,17 @@
 }
 .card{
     display: flex;
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
     //height: 250px;
 }
 .card-rev{
     display: flex;
     flex-direction: row-reverse;
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
     //height: 250px;
 }
 .title{
@@ -19,10 +27,9 @@
     font-size: 2.2rem;
     font-weight: 500;
    // background: #fbdcdc;
-   background-color: #cfbceb;
+   //background-color: #cfbceb;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    color: $color-primary;
 }
 .desc{
     width: 50%;
@@ -33,13 +40,26 @@
         font-size: 1.25rem;
         line-height: 1.75rem;
     }
+    strong{
+        color: $color-primary;
+    }
+    @media (max-width: 768px){
+        width: 100%;
+        padding: 0 15px;
+    }
 }
 .img-box{
     width: 50%;
     display: flex;
     justify-content: center;
+    @media (max-width: 768px){
+        width: 100%;
+    }
 }
 .img{
     height: 400px;
     width: 400px;
+    @media (max-width: 768px){
+        height: 285px;
+    }
 }

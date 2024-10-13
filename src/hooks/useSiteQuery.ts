@@ -12,6 +12,12 @@ export const useSiteQuery = () => {
                   title
                   slug
                 }
+                logo{
+                    gatsbyImageData
+                    title
+                }
+                address
+                phone
             }
         }
     `)

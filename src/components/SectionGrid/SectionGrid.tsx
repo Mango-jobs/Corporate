@@ -20,7 +20,7 @@ const SectionGrid = ({data}) =>{
                         <div className={styles.card}>
                             <GatsbyImage image={image.gatsbyImageData} alt={title} className={styles.cardImg} objectFit='cover'/>
                             <div className={styles.desc}>
-                                <h4 className={styles.title}>{title}</h4>
+                                <h4 className={` gradient-text ${styles.title}`}>{title}</h4>
                                 <RichText content={description}/>
                             </div>
                         </div>

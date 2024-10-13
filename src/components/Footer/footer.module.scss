@@ -9,6 +9,10 @@
     padding: 20px;
     justify-content: space-between;
     height: 200px;
+    @media (max-width: 768px){
+        flex-direction: column;
+        height: auto;
+    }
 }
 .text{
     display: flex;
@@ -17,5 +21,11 @@
     color: white;
     p{
         margin: 7px 0;
+    }
+}
+.logo{
+    width: 150px;
+    @media (max-width: 768px){
+        width: 100px;
     }
 }

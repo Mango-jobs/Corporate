@@ -38,7 +38,10 @@ const HomePage: React.FC<HomePageProps> = ({
         title={seoTitle}
         description={seoDescription.seoDescription}
       />
-      <div>
+      <div 
+      style={{background : `linear-gradient(269deg, rgb(132 100 155), rgb(119 78 149) 80.1%, rgb(96 53 128) 100.98%, rgb(113 22 181))`}}
+      //style={{background: `linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(https://th.bing.com/th/id/R.5dc128d4ff082b92a9208670789ae6ab?rik=%2bJioYcZ9YFWHcQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f5KnwccW.jpg&ehk=rqBnvdCAZSRIFdR2nF067gQBHeiMGmFxjEBmNXXKAhw%3d&risl=&pid=ImgRaw&r=0) fixed center center`}}
+      >
         {
           section.map((item, id) => {
             switch(item.key){
@@ -48,8 +51,8 @@ const HomePage: React.FC<HomePageProps> = ({
                 return <SectionText data={item} key={id}/>
               case 'section-3':
                 return <SectionGrid data={item} key={id}/>
-              case 'section-4':
-                return <TeamGrid data={item} key={id}/>
+              // case 'section-4':
+              //   return <TeamGrid data={item} key={id}/>
               case 'section-5':
                 return <SectionText data={item} key={id}/>
               case 'section-6':

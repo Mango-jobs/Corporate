@@ -7,7 +7,7 @@ const ContactUs = ({data}) => {
   const {title, image} = data
   return (
     <div className='container' id='contact-us'>
-        <div><h3 className='title'>{title}</h3></div>
+        <div><h3 className='title gradient-text'>{title}</h3></div>
         <div className={styles.box}>
           <div className={styles.boxImg}>
             <GatsbyImage 

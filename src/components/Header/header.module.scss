@@ -17,18 +17,26 @@
 }
 .logo {
     width: 30%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: $font-family;
     cursor: pointer;
     font-weight: 700;
     a {
-        color: white;
+        //color: $global-brand-color;
         text-decoration: none;
         text-shadow: 5px solid #fff;
     }
+    @media (max-width: 768px){
+        width: 100%;
+    }
     
 }
+.logo-img{
+    width: 45px;
+    margin-right: 5px;
+}
 .nav{
+    display: block;
     width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -41,5 +49,11 @@
         font-weight: 500;
         text-decoration: none;
         color: white;
+        // &:last-child{
+        //     color: $global-brand-color;
+        // }
+    }
+    @media (max-width: 1024px){
+        display: none;
     }
 }
