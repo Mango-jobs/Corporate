@@ -2,27 +2,31 @@ import React from 'react'
 import { RichText } from '../RichText/RichText'
 import * as styles from './serviceGrid.module.scss'
 import { GatsbyImage } from 'gatsby-plugin-image'
+import Slider from '../Slider/Slider'
 const ServiceGrid = ({data}) => {
     const {title, cards} = data
   return (
     <div className='container' id='services'>
         <div className={styles.box}>
         <div >
-            <h3 className='title'>{title}</h3>
+            <h3 className='title gradient'>{title}</h3>
         </div>
         <div className={styles.cardContainer}>
             {cards.map((item, id) =>{
-                const {title,description, image} = item
+                const {title,description, image, slider} = item
                 return(
                     <div className={id % 2 === 0 ? styles.card : styles.cardRev}>
-                        <div className={styles.imgBox}>
+                        {
+                            image && <div className={styles.imgBox}>
                             <GatsbyImage 
                                 image={image.gatsbyImageData}
                                 alt={title}
                                 className={styles.img}
                                 objectFit='contain'
                             />
-                        </div>
+                            </div>}
+                           { slider && <Slider slides={slider}/>}
+                        
                         <div className={styles.desc}>
                             <RichText content={description}/>
                         </div>

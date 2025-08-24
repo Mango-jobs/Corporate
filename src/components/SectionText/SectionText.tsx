@@ -2,12 +2,13 @@ import React from 'react'
 import * as styles from './sectionText.module.scss'
 import { RichText } from '../RichText/RichText'
 const SectionText = ({data}) => {
-    const {title, description} = data
+    const {title, description, image} = data
+    console.log(description)
   return (
     <div className={`container`} id='about'>
-        <div className={styles.box}>
+        <div className={styles.box} >
           <div>
-              <h2 className={styles.title}> {title}</h2>
+              <h2 className={`${styles.title} gradient`}> {title}</h2>
           </div>
           <div className={styles.desc}>
               <RichText content={description} />

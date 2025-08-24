@@ -7,6 +7,8 @@ import SectionGrid from '../components/SectionGrid/SectionGrid'
 import TeamGrid from '../components/TeamGrid/TeamGrid'
 import ServiceGrid from '../components/ServiceGrid/ServiceGrid'
 import ContactUs from '../components/ContactUs/ContactUs'
+import SectionTextImage from '../components/SectionTextImage/SectionTextImage'
+import CurrentJobGrid from '../components/CurrentJobGrid/CurrentJobGrid'
 
 interface HomePageProps {
   data: {
@@ -39,7 +41,7 @@ const HomePage: React.FC<HomePageProps> = ({
         description={seoDescription.seoDescription}
       />
       <div 
-      style={{background : `linear-gradient(269deg, rgb(132 100 155), rgb(119 78 149) 80.1%, rgb(96 53 128) 100.98%, rgb(113 22 181))`}}
+      // sstyle={{background : `linear-gradient(269deg, rgb(132 100 155), rgb(119 78 149) 80.1%, rgb(96 53 128) 100.98%, rgb(113 22 181))`}}
       //style={{background: `linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(https://th.bing.com/th/id/R.5dc128d4ff082b92a9208670789ae6ab?rik=%2bJioYcZ9YFWHcQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f5KnwccW.jpg&ehk=rqBnvdCAZSRIFdR2nF067gQBHeiMGmFxjEBmNXXKAhw%3d&risl=&pid=ImgRaw&r=0) fixed center center`}}
       >
         {
@@ -48,15 +50,19 @@ const HomePage: React.FC<HomePageProps> = ({
               case 'section-1':
                 return <SectionHero data={item} key={id}/>
               case 'section-2':
-                return <SectionText data={item} key={id}/>
+                return <SectionTextImage data={item} key={id}/>
               case 'section-3':
                 return <SectionGrid data={item} key={id}/>
               // case 'section-4':
               //   return <TeamGrid data={item} key={id}/>
               case 'section-5':
-                return <SectionText data={item} key={id}/>
+                return <SectionTextImage data={item} key={id}/>
               case 'section-6':
                 return <ServiceGrid data={item} key={id}/>
+              case 'section-11':
+                return <ServiceGrid data={item} key={id}/>
+              case 'section-12':
+                return <CurrentJobGrid data={item} key={id}/>
               case 'section-10':
                 return <ContactUs data={item} key={id}/>
               default:
