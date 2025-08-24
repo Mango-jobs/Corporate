@@ -16,7 +16,7 @@ const CurrentJobGrid = ({ data }) => {
   const activeCard = cards?.[activeIndex]
 
   return (
-    <div className="container" id="services">
+    <div className="container" id="current-jobs">
       <div className={styles.box}>
         <div>
           <h3 className="title gradient">{title}</h3>
