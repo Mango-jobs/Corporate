@@ -31,7 +31,7 @@
 }
 .button{
     padding: 5px;
-    background: var(--global-color, #7d3eda);
+    background: $nav-color;
     width: 70px;
     border: none;
     border-radius: 5px;
