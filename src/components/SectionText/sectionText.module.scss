@@ -6,16 +6,18 @@
 .title{
     padding-bottom: 10px;
     font-size: 2rem;
-    //color: blue;
     font-weight: 700;
     font-family: sans-serif;
     color: $color-primary;
+    width: fit-content;
 }
 .desc{
     padding: 10px;
     p{
         font-size: 1.25rem ;
         color: $global-color-light;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.75rem;
     }
     @media (max-width: 768px){
         p{

@@ -10,11 +10,11 @@ const Footer = () => {
         <div className={styles.box}>
             <div className={styles.text}>
                 <p>All Rights Reserved</p> 
-                <p>Mango Jobs @2024</p> 
+                <p>Mango Jobs @2025</p> 
             </div>
-            <div>
+            {/* <div>
               <GatsbyImage image={logo.gatsbyImageData} alt={logo.title} className={styles.logo}/>
-            </div>
+            </div> */}
             <div className={styles.text}>
               <p>Address: {address}</p>
               <p>Phone: +91-{phone}</p>

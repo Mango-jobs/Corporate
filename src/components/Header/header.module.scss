@@ -1,11 +1,13 @@
 @import '../../styles/vars';
 
 .wrapper{
-    background-image: linear-gradient(269deg, #8550ab, #4d0085 80.1%, #4d0085 100.98%, #844fab);
+   // background-image: linear-gradient(269deg, #8550ab, #4d0085 80.1%, #4d0085 100.98%, #844fab);
     position: sticky;
     top: 0;
     z-index: 10;
     width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 0px black;
 }
 .box{
     display: flex;
@@ -16,7 +18,7 @@
     //background-image: linear-gradient(269deg, #8550ab, #4d0085 80.1%, #4d0085 80.98%, #844fab);
 }
 .logo {
-    width: 30%;
+    width: 40%;
     font-size: 2rem;
     font-family: $font-family;
     cursor: pointer;
@@ -37,9 +39,10 @@
 }
 .nav{
     display: block;
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 20px 0;
     list-style: none;
     &-item {
@@ -48,7 +51,8 @@
         cursor: pointer;
         font-weight: 500;
         text-decoration: none;
-        color: white;
+        color: black;
+        padding: 5px
         // &:last-child{
         //     color: $global-brand-color;
         // }

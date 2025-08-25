@@ -20,6 +20,9 @@ export const sectionText = graphql`
       description {
         raw
       }
+      image{
+        gatsbyImageData
+      }
     }
   }
 `
@@ -29,6 +32,9 @@ export const sectionTextWithImage = graphql`
     ... on ContentfulSectionTextWithImage {
       title
       key
+      description{
+        raw
+      }
       image{
         gatsbyImageData
       }
@@ -63,6 +69,9 @@ export const sectionGrid = graphql`
           image {
             gatsbyImageData
           }
+          slider {
+            gatsbyImageData
+          }
         }
         ... on ContentfulSectionContent {
           title
@@ -72,6 +81,12 @@ export const sectionGrid = graphql`
           image{
             gatsbyImageData
           }
+          workLocation
+          title
+          skills
+          datePosted
+          experience
+          budget
         }
       }
     }

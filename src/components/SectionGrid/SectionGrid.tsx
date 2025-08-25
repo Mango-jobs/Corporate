@@ -10,7 +10,7 @@ const SectionGrid = ({data}) =>{
       return (
         <div className='container' id='our-values'>
             <div className={styles.box}>
-            <div className='title'>
+            <div className='title gradient'>
                 <h2>{title}</h2>
             </div>
             <div className={styles.cardBox}>

@@ -25,7 +25,8 @@ const Header = () => {
           {header.map((item, id) =>{
             const {title, slug} = item
             return(
-              <li  key={id} className={header.length -1 == id ? 'gradient-text color-nav': styles.navItem} onClick={() => scrollTo(slug.replace('#', ''))}>{title}</li>
+              header.length -1 != id ? <li key={id} className={ styles.navItem} onClick={() => scrollTo(slug.replace('#', ''))}>{title}</li> :
+              <li key={id} className={ ' color-nav'} onClick={() => scrollTo(slug.replace('#', ''))}><button className='color-nav'>{title}</button></li>
             )
           })}
         </ul>

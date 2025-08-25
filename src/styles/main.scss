@@ -21,7 +21,35 @@ p {
     font-family: $font-family;
 }
 
+.gradient{
+  //  background: linear-gradient(to right, orange, rgb(255, 255, 4), red);
+    background: $nav-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .screen-content {
     position: relative;
     min-height: 100vh;
@@ -128,6 +156,8 @@ p {
     font-weight: 700;
     font-family: sans-serif;
     color: $color-primary;
+    width: fit-content;
+    text-decoration: underline;
 }
 
 .blog-body {
@@ -594,15 +624,19 @@ header {
 }
 .gradient-text {
     background: linear-gradient(to right, orange, yellow, red);
+    //background: $nav-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .color-nav{
-    font-size: 1.25rem;
-    font-family: $font-family;
+     padding: 5px;
+    background: $nav-color;
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: 500;
-    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
 }
 
 

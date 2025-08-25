@@ -1,0 +1,22 @@
+@import '../../styles//vars';
+
+
+.slides {
+  width: 50%;
+  margin: 0 auto; // Center the .slides container horizontally
+  @media (max-width: 768px){
+        width: 100%;
+    }
+
+  .img {
+    display: flex;
+    justify-content: center; // Horizontally center the image
+    align-items: center;     // Vertically center (optional)
+    height: 400px;
+    overflow: hidden;
+    @media (max-width: 768px){
+        height: 300px;
+        overflow: hidden;
+    }
+  }
+}
