@@ -22,7 +22,8 @@ p {
 }
 
 .gradient{
-    background: linear-gradient(to right, orange, rgb(255, 255, 4), red);
+  //  background: linear-gradient(to right, orange, rgb(255, 255, 4), red);
+    background: $nav-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -623,6 +624,7 @@ header {
 }
 .gradient-text {
     background: linear-gradient(to right, orange, yellow, red);
+    //background: $nav-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
