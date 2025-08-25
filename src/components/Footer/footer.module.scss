@@ -2,13 +2,14 @@
 
 .box{
     height: 150px;
-    //background: $global-header;
-    background-image: linear-gradient(176deg, #8550ab, #4d0085 35.1%, #4d0085 30.98%, #844fab);
+    // background: $global-header;
+    // background-image: linear-gradient(176deg, #8550ab, #4d0085 35.1%, #4d0085 30.98%, #844fab);s
     display: flex;
     align-items: center;
     padding: 20px;
     justify-content: space-between;
-    height: 200px;
+    height: 140px;
+    border-top: 1px solid black;
     @media (max-width: 768px){
         flex-direction: column;
         height: auto;
@@ -19,6 +20,7 @@
     font-size: 1.25rem;
     flex-direction: column;
     color: $color-primary;
+    align-items: center;
     p{
         margin: 7px 0;
     }
