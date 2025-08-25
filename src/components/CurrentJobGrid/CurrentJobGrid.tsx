@@ -6,6 +6,7 @@ import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
 import { Pagination, Navigation } from "swiper/modules"
+import useSiteQuery from "../../hooks"
 
 const CurrentJobGrid = ({ data }) => {
   const { title, cards } = data
@@ -28,6 +29,7 @@ const CurrentJobGrid = ({ data }) => {
     return `${day} ${month} ${year}`
   }
 
+    const { emailId} = useSiteQuery()
   return (
     <div className="container" id="current-jobs">
       <div>
@@ -105,6 +107,10 @@ const CurrentJobGrid = ({ data }) => {
                   <p className={styles.para}>
                     <span className={styles.subpara}>Budget: </span>
                     {budget}
+                  </p>
+                   <p className={styles.para}>
+                    <span className={styles.subpara}>Send Resume: </span>
+                    {emailId}
                   </p>
                   <button
                     className={styles.button}
