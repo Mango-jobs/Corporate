@@ -132,6 +132,7 @@ const CurrentJobGrid = ({ data }) => {
               ×
             </button>
             <RichText content={activeCard.description} />
+            <button className={styles.btn}><a target='blank' href = 'https://docs.google.com/forms/d/e/1FAIpQLSdzeUX47xvOPqbBT_1wOg3u43v82bofCDAwiWABiXl1nx2unw/viewform?pli=1'>Send Resume</a>  </button>
           </div>
         </div>
       )}
