@@ -158,6 +158,11 @@ p {
     color: $color-primary;
     width: fit-content;
     text-decoration: underline;
+        @media (max-width: 768px){
+        width: 350px;
+        font-size: 1.5rem;
+        left: 10%;
+    }
 }
 
 .blog-body {
@@ -629,7 +634,7 @@ header {
     -webkit-text-fill-color: transparent;
 }
 .color-nav{
-     padding: 5px;
+    padding: 5px;
     background: $nav-color;
     width: fit-content;
     border: none;
