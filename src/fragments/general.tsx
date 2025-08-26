@@ -87,6 +87,7 @@ export const sectionGrid = graphql`
           datePosted
           experience
           budget
+          createdAt
         }
       }
     }
