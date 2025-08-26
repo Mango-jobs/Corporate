@@ -10,7 +10,7 @@ import useSiteQuery from "../../hooks"
 
 const CurrentJobGrid = ({ data }) => {
   const { title, cards } = data
-  const [activeIndex, setActiveIndex] = useState(null)
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const prevRef = useRef(null)
   const nextRef = useRef(null)
@@ -75,7 +75,12 @@ const CurrentJobGrid = ({ data }) => {
             modules={[Pagination, Navigation]}
             className={`mySwiper ${styles.customSwiper}`}
           >
-            {cards.map((item, id) => {
+            {cards
+              .sort(
+              (a: { createdAt: string }, b: { createdAt: string }) =>
+                new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+              )
+              .map((item: typeof cards[0], id: number) => {
               const {
                 title,
                 workLocation,
@@ -87,40 +92,40 @@ const CurrentJobGrid = ({ data }) => {
               const postDate = dateExtraction(datePosted)
               return (
                 <SwiperSlide key={id} className={styles.card}>
-                  <p className={styles.title}>{title}</p>
-                  <p className={styles.para}>
-                    <span className={styles.subpara}>Skill: </span>
-                    {skills}
-                  </p>
-                  <p className={styles.para}>
-                    <span className={styles.subpara}>Experience:</span>{" "}
-                    {experience}
-                  </p>
-                  <p className={styles.para}>
-                    <span className={styles.subpara}>Date Posted:</span>{" "}
-                    {postDate}
-                  </p>
-                  <p className={styles.para}>
-                    <span className={styles.subpara}>Work Location: </span>
-                    {workLocation}
-                  </p>
-                  <p className={styles.para}>
-                    <span className={styles.subpara}>Budget: </span>
-                    {budget}
-                  </p>
-                   <p className={styles.para}>
-                    <span className={styles.subpara}>Send Resume: </span>
-                    {emailId}
-                  </p>
-                  <button
-                    className={styles.button}
-                    onClick={() => setActiveIndex(id)}
-                  >
-                    View
-                  </button>
+                <p className={styles.title}>{title}</p>
+                <p className={styles.para}>
+                  <span className={styles.subpara}>Skill: </span>
+                  {skills}
+                </p>
+                <p className={styles.para}>
+                  <span className={styles.subpara}>Experience:</span>{" "}
+                  {experience}
+                </p>
+                <p className={styles.para}>
+                  <span className={styles.subpara}>Date Posted:</span>{" "}
+                  {postDate}
+                </p>
+                <p className={styles.para}>
+                  <span className={styles.subpara}>Work Location: </span>
+                  {workLocation}
+                </p>
+                <p className={styles.para}>
+                  <span className={styles.subpara}>Budget: </span>
+                  {budget}
+                </p>
+                <p className={styles.para}>
+                  <span className={styles.subpara}>Send Resume: </span>
+                  {emailId}
+                </p>
+                <button
+                  className={styles.button}
+                  onClick={() => setActiveIndex(id)}
+                >
+                  View
+                </button>
                 </SwiperSlide>
               )
-            })}
+              })}
           </Swiper>
         </div>
       </div>
